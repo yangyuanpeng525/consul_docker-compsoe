@@ -1,0 +1,19 @@
+{
+  "service": {
+     "name": "test-nginx",
+     "Tags": ["test"],
+     "meta": {
+        "version":"1.19.0",
+        "date": "2021年 04月 26日 星期一 15:06:16 CST",
+        "app": "nginx"
+        },
+     "address": "192.168.200.22",
+     "port": 80,
+     "enable_tag_override": false,
+     "check": {
+        "deregisterCriticalServiceAfter":"90m",
+        "http":"http://192.168.200.22:80",
+        "interval":"10s"
+        }
+  }
+}
